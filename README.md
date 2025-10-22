@@ -1,4 +1,3 @@
-
 Spam Detection using Naive Bayes
 
 This project demonstrates how to build a Spam Detection Model using Python and Machine Learning.
@@ -12,11 +11,11 @@ ham for non-spam and spam for spam.
 
 ⚙️ Technologies Used
 
-Python 3
+🐍 Python 3
 
-Pandas – for data manipulation
+📊 Pandas – for data manipulation
 
-scikit-learn (sklearn) – for ML model building
+🧩 scikit-learn (sklearn) – for ML model building
 
 train_test_split – split dataset
 
@@ -32,16 +31,15 @@ File: spam.csv
 
 The dataset includes two columns:
 
-v1: Label (ham or spam)
-
-v2: Message text
-
+Column	Description
+v1	Label (ham or spam)
+v2	Message text
 🧩 How It Works
-1️⃣ Load Dataset
+🔹 1. Load Dataset
 
 The dataset is read using pandas.read_csv() with Latin-1 encoding.
 
-2️⃣ Preprocessing
+🔹 2. Preprocessing
 
 Keep only v1 and v2 columns.
 
@@ -49,22 +47,22 @@ Rename columns to label and message.
 
 Convert labels to numeric form (ham → 0, spam → 1).
 
-3️⃣ Train-Test Split
+🔹 3. Train-Test Split
 
 Data is split into training (80%) and testing (20%) sets.
 
-4️⃣ Text Vectorization
+🔹 4. Text Vectorization
 
 CountVectorizer transforms text into a bag-of-words representation, ignoring English stopwords.
 
-5️⃣ Model Training
+🔹 5. Model Training
 
 The MultinomialNB classifier is trained on the vectorized training data.
 
-6️⃣ Prediction and Evaluation
+🔹 6. Prediction and Evaluation
 
 The model predicts on test data and is evaluated using:
 
-Accuracy Score
+✅ Accuracy Score
 
-Confusion Matrix
+✅ Confusion Matrix
